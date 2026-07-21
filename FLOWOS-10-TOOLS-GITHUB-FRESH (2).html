@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FLOWOS - 10 Tools LIVE | 10,000 Tools For Creators</title>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@600;800&display=swap" rel="stylesheet">
+<style>
+:root{--y:#FFD500;--p:#FF2D95;--b:#00C2FF;--g:#00FF88;--d:#111}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--y);font-family:'Inter',sans-serif;color:var(--d)}
+.b{font-family:'Bangers'}
+.top{background:black;color:var(--g);text-align:center;padding:9px;font-family:'Bangers';letter-spacing:1px}
+.hero{text-align:center;padding:28px 16px;border-bottom:8px solid black}
+.hero h1{font-family:'Bangers';font-size:56px;line-height:.9;color:var(--b);-webkit-text-stroke:2.5px black;text-shadow:5px 5px 0 #000}
+.hero h1 span{color:var(--p)}
+.badge{background:black;color:white;padding:6px 12px;border-radius:20px;font-size:11px;display:inline-block;transform:rotate(-2deg);margin-bottom:10px}
+.grid{max-width:1100px;margin:20px auto;padding:0 14px;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.card{background:white;border:4px solid black;border-radius:18px;padding:18px;box-shadow:7px 7px 0 #000;position:relative}
+.card h2{font-family:'Bangers';font-size:22px}
+.desc{font-size:11px;opacity:.6;margin:4px 0 10px}
+input{width:100%;border:3px solid black;border-radius:10px;padding:10px;font-weight:700;margin-bottom:8px}
+.btn{width:100%;background:black;color:white;border:3px solid black;border-radius:10px;padding:10px;font-family:'Bangers';font-size:17px;cursor:pointer}
+.out{background:#f6f6f6;border:3px dashed black;border-radius:10px;padding:10px;margin-top:8px;min-height:54px;white-space:pre-wrap;font-size:12.5px}
+.tag{position:absolute;top:-11px;right:14px;background:var(--p);color:white;border:2px solid black;padding:3px 9px;border-radius:20px;font-family:'Bangers';font-size:11px;transform:rotate(2deg)}
+.copy{margin-top:6px;background:var(--y);border:2px solid black;border-radius:7px;padding:4px 9px;font-family:'Bangers';cursor:pointer}
+.foot{text-align:center;padding:26px;background:white;border-top:5px solid black;font-weight:800}
+</style></head><body>
+<div class="top">● 10 TOOLS LIVE • GITHUB ONLY • FRESH START • @flowos.in ●</div>
+<div class="hero">
+<div class="badge">FRESH • NO VERCEL • GITHUB PAGES ONLY</div>
+<h1>10,000 <span>TOOLS FOR</span><br>CREATORS</h1>
+<p style="background:white;display:inline-block;border:3px solid black;padding:6px 12px;margin-top:10px;transform:rotate(1deg);font-weight:800">Day <span id="day"></span>/10,000 • 10 TOOLS LIVE • flowos.in</p>
+</div>
+<div class="grid">
+<div class="card"><div class="tag">LIVE</div><h2>⚡ 1. FlowCaption</h2><p class="desc">Viral captions in 2 sec</p><input id="i1" placeholder="Topic: gym reel"><button class="btn" onclick="c1()">Generate →</button><div class="out" id="o1">Output here...</div><button class="copy" onclick="copyIt('o1')">Copy</button></div>
+<div class="card"><div class="tag" style="background:var(--b)">LIVE</div><h2>🔥 2. FlowHashtag</h2><p class="desc">15 viral hashtags</p><input id="i2" placeholder="Niche: fitness"><button class="btn" onclick="c2()">Find →</button><div class="out" id="o2">Hashtags here...</div><button class="copy" onclick="copyIt('o2')">Copy</button></div>
+<div class="card"><div class="tag" style="background:var(--g);color:black">LIVE</div><h2>💥 3. Viral Hooks</h2><p class="desc">10 scroll-stoppers</p><input id="i3" placeholder="Video about?"><button class="btn" style="background:var(--g);color:black" onclick="c3()">10 Hooks →</button><div class="out" id="o3">Hooks here...</div><button class="copy" onclick="copyIt('o3')">Copy</button></div>
+<div class="card"><div class="tag">NEW • LIVE</div><h2>🚀 4. FlowBio</h2><p class="desc">3 IG bios that convert</p><input id="i4" placeholder="Niche: e.g. Fitness Coach"><button class="btn" onclick="c4()">Generate Bio →</button><div class="out" id="o4">Bios here...</div><button class="copy" onclick="copyIt('o4')">Copy</button></div>
+<div class="card"><div class="tag" style="background:var(--b)">NEW • LIVE</div><h2>👇 5. FlowCTA</h2><p class="desc">CTAs that make them click</p><input id="i5" placeholder="What to sell? e.g. My preset"><button class="btn" onclick="c5()">Generate CTA →</button><div class="out" id="o5">CTAs here...</div><button class="copy" onclick="copyIt('o5')">Copy</button></div>
+<div class="card"><div class="tag" style="background:var(--g);color:black">NEW • LIVE</div><h2>🎬 6. FlowThumb</h2><p class="desc">YouTube/Reel thumb text</p><input id="i6" placeholder="Video topic: e.g. I made 10 tools"><button class="btn" style="background:var(--g);color:black" onclick="c6()">Thumb Text →</button><div class="out" id="o6">Thumb text here...</div><button class="copy" onclick="copyIt('o6')">Copy</button></div>
+<div class="card"><div class="tag">NEW • LIVE</div><h2>📅 7. FlowCalendar</h2><p class="desc">7-day content plan</p><input id="i7" placeholder="Niche: e.g. creator tools"><button class="btn" onclick="c7()">Calendar →</button><div class="out" id="o7">Calendar here...</div><button class="copy" onclick="copyIt('o7')">Copy</button></div>
+<div class="card"><div class="tag" style="background:var(--b)">NEW • LIVE</div><h2>📝 8. FlowScript</h2><p class="desc">15-sec reel script</p><input id="i8" placeholder="Idea: e.g. Why I build 10k tools"><button class="btn" onclick="c8()">Script →</button><div class="out" id="o8">Script here...</div><button class="copy" onclick="copyIt('o8')">Copy</button></div>
+<div class="card"><div class="tag" style="background:var(--g);color:black">NEW • LIVE</div><h2>💌 9. DM Opener</h2><p class="desc">Brand deal DMs</p><input id="i9" placeholder="Brand type: e.g. Gym brand"><button class="btn" style="background:var(--g);color:black" onclick="c9()">DM →</button><div class="out" id="o9">DMs here...</div><button class="copy" onclick="copyIt('o9')">Copy</button></div>
+<div class="card"><div class="tag">NEW • LIVE</div><h2>💬 10. Comment Reply</h2><p class="desc">Witty replies</p><input id="i10" placeholder="Paste comment: e.g. Bro this is fire"><button class="btn" onclick="c10()">Reply →</button><div class="out" id="o10">Replies here...</div><button class="copy" onclick="copyIt('o10')">Copy</button></div>
+</div>
+<div class="foot"><p class="b" style="font-size:22px">FLOWOS • FRESH ON GITHUB</p><p style="font-size:12px;margin-top:6px">Delete Vercel → Pure GitHub Pages → No Confusion → @flowos.in</p></div>
+<script>
+document.getElementById('day').innerText=Math.floor((Date.now()-new Date('2025-01-01'))/86400000)%10000;
+function copyIt(id){navigator.clipboard.writeText(document.getElementById(id).innerText);alert('Copied!')}
+function c1(){let t=document.getElementById('i1').value||'my reel';document.getElementById('o1').innerText=`POV: ${t} changed everything 🔥\n\nFollow @flowos.in\n---\nNo one warned me ${t} would be this hard 😭\nLink in bio\n---\nSign to start ${t} today 👇`;}
+function c2(){let n=(document.getElementById('i2').value||'creator').replace(/ /g,'');document.getElementById('o2').innerText=`#${n} #${n}tips #flowos #buildinpublic #10ktools #creatorTools #${n}community #viral #reels #instagramgrowth #aitools #contentcreator #${n}hack #flowosIn #creatorEconomy`;}
+function c3(){let v=document.getElementById('i3').value||'my tools';document.getElementById('o3').innerText=`1. Stop scrolling - I built ${v} in 3 days\n2. I wasted 3 months on ${v} so you don't have to\n3. Truth about ${v} no one tells you\n4. If your ${v} fails watch this\n5. This ${v} made me viral\n6. 3 mistakes killing your ${v}\n7. POV: You fixed ${v}\n8. Don't post ${v} before this\n9. How I got 10k views with ${v}\n10. I tried ${v} for 30 days - result`;}
+function c4(){let n=document.getElementById('i4').value||'Creator';document.getElementById('o4').innerText=`BIO 1: I help ${n} go viral | 10k Tools → flowos link 👇\n\nBIO 2: ${n} Expert 🚀 | Tools in bio | DM TOOLS\n\nBIO 3: Building 10,000 tools for ${n} | Day ${document.getElementById('day').innerText}/10000 @flowos.in`;}
+function c5(){let p=document.getElementById('i5').value||'my link';document.getElementById('o5').innerText=`CTA 1: Link in bio for ${p} 👇\nCTA 2: Comment TOOLS and I'll DM ${p}\nCTA 3: Save this - ${p} is in bio\nCTA 4: Follow @flowos.in + get ${p} free\nCTA 5: First 100 get ${p} FREE - link in bio`;}
+function c6(){let v=document.getElementById('i6').value||'10 Tools';document.getElementById('o6').innerText=`THUMB 1: I BUILT ${v.toUpperCase()} IN 3 DAYS\nTHUMB 2: ${v.toUpperCase()} = VIRAL?\nTHUMB 3: STOP DOING ${v.toUpperCase()}\nTHUMB 4: ${v.toUpperCase()} SECRET REVEALED\nTHUMB 5: THIS ${v.toUpperCase()} CHANGED MY LIFE`;}
+function c7(){let n=document.getElementById('i7').value||'creator tools';document.getElementById('o7').innerText=`MON: How I built ${n} tool 1\nTUE: Tool 2 saves 2 hrs\nWED: Mistake in ${n}\nTHU: Tool 4 drop\nFRI: My ${n} routine\nSAT: Week recap 4 tools\nSUN: Q&A about ${n}`;}
+function c8(){let i=document.getElementById('i8').value||'10k tools journey';document.getElementById('o8').innerText=`HOOK (0-2s): Stop - ${i}\nBODY (2-12s): Day ${document.getElementById('day').innerText} I built 10 tools free for creators, no team, no money, just flowos.in\nCTA (12-15s): Link in bio - 10 tools free, follow for daily drops`;}
+function c9(){let b=document.getElementById('i9').value||'your brand';document.getElementById('o9').innerText=`DM 1: Hey! Love ${b} 🔥 I'm building FlowOS (10k tools for creators) - collab to give your audience free tools?\nDM 2: Quick win for ${b}: I can make a free tool for your community - free promo for you?\nDM 3: Saw ${b} - I'm @flowos.in (10k tools) - let's do a giveaway?`;}
+function c10(){let c=document.getElementById('i10').value||'Nice post';document.getElementById('o10').innerText=`REPLY 1: Thanks 🔥 More tools at flowos.in link in bio!\nREPLY 2: Appreciate you! Building 10k tools - follow @flowos.in for next drop\nREPLY 3: Let's gooo 🚀 What tool you want next? Comment below`;}
+</script></body></html>
